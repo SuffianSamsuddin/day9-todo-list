@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    /* background-color: turquoise; */
+    background: linear-gradient(75deg, purple, turquoise);
+}
+
+header {
+    width: 100vw;
+    height: 55px;
+    background-color: turquoise;
+}
+
+nav {
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo {
+    width: 55px;
+    height: 55px;
+}
+
+.bigLogo {
+    width: 55px;
+    height: 55px;
+}
+
+.navMenu {
+    width: 750px;
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+#pageTitle {
+    width: 650px;
+    height: 55px;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 55px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+#container {
+    width: 800px;
+    height: auto;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    background-color: violet;
+    margin: 160px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    padding: 20px;
+}
+
+input {
+    border: none;
+    padding: 20px 15px;
+    border-radius: 50px;
+}
+
+input:focus {
+    outline: 0;
+    /* border: 2px solid red; */
+
+    box-shadow: 5px 5px 10px rgba (0, 0, 0, 0.2);
+}
+
+button {
+    border: none;
+    background-color: turquoise;
+    padding: 20px 20px;
+    border-radius: 50px;
+    color: white;
+    margin: 0 10px;
+}
+
+
+button.hover {
+    transform: translateY(11px);
+}
+
+#task-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.task {
+    width: 300px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: grey;
+
+    animation-name: fadeTask;
+    animation-duration: 0.7s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#floatingOwl1 {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    right: 220px;
+    top: 230px;
+}
+
+.purpleOwl1 {
+    width: 240px;
+    height: 240px;
+}
+
+#floatingOwl2 {
+    width: 300px;
+    height: 270px;
+    position: absolute;
+    left: 190px;
+    top: 210px;
+}
+
+.purpleOwl2 {
+    width: 300px;
+    height: 270px;
+}
+
+@keyframes fadeTask {
+    0% {
+        opacity: 0;
+        background-color: blueviolet;
+        transform: translateX(-250px);
+    }
+    100% {
+        opacity: 100;
+    }
+}
